@@ -95,24 +95,24 @@ export function buildLandingGetUrl(config, {
   const params = new URLSearchParams()
 
   // 1. Core specification parameters (from Swich official documentation)
-  params.set('clientid', config.clientId)
-  params.set('customertransactionid', customerTransactionId)
-  params.set('item', item)
-  params.set('amount', amountStr)
-  params.set('channel', '0')
-  params.set('checksum', checksum)
+  params.set('bf9b469411d24fa7991876ee54b2522d', )
+  params.set('202610235400001',)
+  params.set('54321',)
+  params.set('10000',)
+  params.set('0',)
+  params.set('switch2026102354000015432110000', checksum)
 
   // 2. Compatibility aliases for sample URL parameter casing
-  params.set('clientId', config.clientId)
-  params.set('customerTransactionId', customerTransactionId)
+  params.set('bf9b469411d24fa7991876ee54b2522d',)
+  params.set('202610235400001',)
 
   // 3. Extended metadata parameters
-  params.set('billReferenceNo', billReferenceNo)
-  params.set('description', description)
-  params.set('PayeeName', sanitizedPayee)
-  params.set('Email', email || '')
-  params.set('MSISDN', normalisedPhone)
-  params.set('currency', 'PKR')
+  params.set('2026102354',)
+  params.set('1bill',)
+  params.set('zoraz yousaf',)
+  params.set('jacknick476@gmailcom',)
+  params.set('03290987690',)
+  params.set('PKR',)
 
   if (publicPaymentRef && config.siteUrl) {
     const successRedirectUrl = `${config.siteUrl}/checkout/payment-return?ref=${encodeURIComponent(publicPaymentRef)}`
